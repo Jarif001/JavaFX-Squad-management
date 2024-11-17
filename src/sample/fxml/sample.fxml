@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="660.0" prefWidth="918.0">
+         <children>
+            <Button layoutX="71.0" layoutY="188.0" mnemonicParsing="false" onAction="#switchToSearchPlayerScene" prefHeight="76.0" prefWidth="223.0" text="Search Players">
+               <font>
+                  <Font name="Serif Bold Italic" size="28.0" />
+               </font>
+            </Button>
+            <Button layoutX="71.0" layoutY="342.0" mnemonicParsing="false" onAction="#switchToSearchClubScene" prefHeight="76.0" prefWidth="223.0" text="Search Clubs">
+               <font>
+                  <Font name="Serif Bold Italic" size="28.0" />
+               </font>
+            </Button>
+            <Label fx:id="headTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="34.0" prefHeight="68.0" prefWidth="571.0" text="Welcome to Player Database System" textAlignment="CENTER" textFill="#3f9c0d" underline="true">
+               <font>
+                  <Font size="34.0" />
+               </font>
+               <padding>
+                  <Insets bottom="6.0" left="2.0" right="2.0" top="5.0" />
+               </padding>
+            </Label>
+            <Button layoutX="530.0" layoutY="266.0" mnemonicParsing="false" onAction="#switchToSearchLoginScene" prefHeight="68.0" prefWidth="274.0" text="Login as a club">
+               <font>
+                  <Font name="System Italic" size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="quitBtn" layoutX="777.0" layoutY="590.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="47.0" prefWidth="126.0" text="Quit">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

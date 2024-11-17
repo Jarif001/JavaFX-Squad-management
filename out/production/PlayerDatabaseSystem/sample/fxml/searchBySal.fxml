@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchBySal">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="750.0">
+         <children>
+            <Button layoutX="365.0" layoutY="446.0" mnemonicParsing="false" onAction="#searchButtonSal" prefHeight="76.0" prefWidth="186.0" text="Search">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="14.0" prefHeight="68.0" prefWidth="281.0" text="Searching Player" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <padding>
+                  <Insets bottom="6.0" left="2.0" right="2.0" top="5.0" />
+               </padding>
+            </Label>
+            <Button layoutX="765.0" layoutY="578.0" mnemonicParsing="false" onAction="#backButton" prefHeight="68.0" prefWidth="138.0" text="Back">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Label fx:id="highText" alignment="CENTER" contentDisplay="CENTER" layoutX="201.0" layoutY="98.0" prefHeight="68.0" prefWidth="514.0" text="Enter Higher Range" textAlignment="CENTER" textFill="#328da4" underline="true">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="6.0" left="2.0" right="2.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lowText" alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="262.0" prefHeight="68.0" prefWidth="514.0" text="Enter Lower Range" textAlignment="CENTER" textFill="#23aeef" underline="true">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="6.0" left="2.0" right="2.0" top="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="highRange" alignment="CENTER" layoutX="301.0" layoutY="179.0" prefHeight="68.0" prefWidth="314.0" promptText="Higher-Range">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lowRange" alignment="CENTER" layoutX="301.0" layoutY="345.0" prefHeight="68.0" prefWidth="314.0" promptText="Lower-Range">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

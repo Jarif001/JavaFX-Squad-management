@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClubWindow">
+   <children>
+      <Button fx:id="logoutBtn" layoutX="824.0" layoutY="534.0" mnemonicParsing="false" onAction="#closeButton" prefHeight="51.0" prefWidth="112.0" text="Logout">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="msgIcon" fitHeight="73.0" fitWidth="100.0" layoutX="694.0" layoutY="512.0" onMousePressed="#msgIconPressed" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="clubLogo" fitHeight="112.5" fitWidth="200.0" layoutX="785.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="296.0" layoutY="211.0" mnemonicParsing="false" onAction="#myPlayerBtn" text="My Players">
+         <font>
+            <Font name="Roboto Black" size="28.0" />
+         </font>
+      </Button>
+      <Button layoutX="296.0" layoutY="329.0" mnemonicParsing="false" onAction="#transferListBtn" prefHeight="59.0" prefWidth="177.0" text="Transfer List">
+         <font>
+            <Font name="Roboto Black" size="24.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="306.0" layoutY="37.0" prefHeight="66.0" prefWidth="337.0" text="Welcome Boss" textFill="WHITE" underline="true">
+         <font>
+            <Font name="GothicE" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="clubNameBelow" alignment="CENTER" layoutX="14.0" layoutY="538.0" prefHeight="44.0" prefWidth="217.0" textFill="#eadada">
+         <font>
+            <Font name="Segoe Script Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

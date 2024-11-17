@@ -1,0 +1,15 @@
+.root{
+    -fx-position:center;
+    -fx-background-image: url('../clubLoginBg.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+.button: hover{
+    -fx-opacity: 0.6;
+}
+
+#myIcon:hover{
+    -fx-opacity: 0.6;
+}
